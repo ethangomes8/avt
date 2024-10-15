@@ -1,0 +1,295 @@
+/* Général */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333333; 
+    background-color: #f9f9f9; 
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #000000; 
+}
+
+h2, h3 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000; 
+}
+
+a {
+    text-decoration: none;
+    color: #B72B27; 
+}
+
+a:hover {
+    color: #A71F1F; 
+}
+
+/* Header */
+#imglogo {
+    width: 30%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    margin-left: auto;
+}
+
+header {
+    background-color: #ffffff; 
+    padding: 20px 0;
+    color: #333333;
+}
+
+header .logo {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    padding: 10px;
+}
+
+header nav ul {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #B72B27; 
+}
+
+.dvi {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    margin-left: auto;
+    background-color: #B72B27; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.dvi:hover {
+    background-color: #A71F1F; 
+}
+
+.cta {
+    background-color: #B72B27;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.cta:hover {
+    background-color: #A71F1F; 
+}
+
+/* Section Hero */
+.hero {
+    background-color: #ffffff; 
+    color: #333333;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+/* Section Services */
+.services {
+    background-color: #f9f9f9; 
+    padding: 80px 0;
+}
+
+.service-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.service-item {
+    text-align: center;
+    width: 30%;
+}
+
+.service-item i {
+    font-size: 3rem;
+    color: #B72B27; 
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+/* Section Portfolio */
+.portfolio {
+    background-color: #ffffff; 
+    padding: 80px 0;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.portfolio-item {
+    text-align: center;
+    width: 45%; /* Ajusté pour avoir deux éléments côte à côte */
+}
+
+.portfolio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+.image-main {
+    width: 100%;        
+    max-width: 800px; 
+    border-radius: 10px; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s; 
+    cursor: pointer;
+}
+
+.image-main.zoomed {
+    transform: scale(1.5); /* Zoom effect */
+    z-index: 1000;
+    position: relative;
+}
+
+.thumbnail-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    gap: 10px; 
+    padding-bottom: 30px;
+}
+
+.thumbnail {
+    width: 100px; 
+    height: auto; 
+    cursor: pointer; 
+    border: 2px solid transparent; 
+    border-radius: 5px; 
+    transition: border-color 0.3s; 
+}
+
+.thumbnail:hover {
+    border-color: #B72B27; /* Rouge moins agressif */
+}
+
+.zoom-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #594545; /* Couleur sombre */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.zoom-button:hover {
+    background-color: #A71F1F; /* Rouge foncé pour l'effet hover */
+}
+
+.thumbnail-container img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* Section Témoignages */
+.testimonial {
+    background-color: #f9f9f9; 
+    padding: 80px 0;
+}
+
+.testimonial-items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonial-item {
+    text-align: center;
+    width: 30%;
+    color: #333333; 
+    margin-bottom: 20px;
+}
+
+.testimonial-item i {
+    font-size: 3rem;
+    color: #B72B27; 
+    margin-bottom: 15px;
+}
+
+/* Section Contact */
+.contact {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.contact input, .contact textarea {
+    width: 50%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #B72B27; 
+    color: white;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+    width: 10%;
+}
+
+.contact button:hover {
+    background-color: #A71F1F; 
+}
+
+/* Footer */
+footer {
+    background-color: #ffffff; 
+    color: #B72B27;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    color: #333333; 
+}

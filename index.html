@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service de Création de Sites Web sur Mesure</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styleavt.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>AvtWebServices</h1>
+            </div>
+            <a href="#contact" class="dvi">Demander un devis gratuit</a>
+            <img src="image/logoentiernorect.png" id="imglogo">
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Votre site internet sur mesure, simple et efficace</h2>
+            <p>Transformez vos idées en un site performant et design.</p>
+            <a href="#contact" class="cta">Parlez à un expert</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <div class="service-items">
+                <div class="service-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Site Vitrine</h3>
+                    <p>Un site élégant pour représenter votre marque.</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h3>Menu de restaurant</h3>
+                    <p>Proposez votre carte sur un site ludique</p>
+                </div>
+                <div class="service-item">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>SEO</h3>
+                    <p>Améliorez votre visibilité avec une stratégie SEO efficace.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>Nos Réalisations</h2>
+    
+            <!-- Portfolio Item 1 - Image principale -->
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img id="main-image" src="image/image-principale.png" alt="Image principale" class="image-main" onclick="toggleZoom('main-image')">
+                    <button class="zoom-button" id="zoom-toggle-main" onclick="toggleZoom('main-image')">Zoomer</button>
+                    <div class="thumbnail-container">
+                        <img src="image/image-principale.png" alt="Image 1" class="thumbnail" onclick="changeImage('main-image', 'image/image-principale.png')">
+                        <img src="image/image-principale_annexe1.png" alt="Image 2" class="thumbnail" onclick="changeImage('main-image', 'image/image-principale_annexe1.png')">
+                        <img src="image/image-principale_annexe2.png" alt="Image 3" class="thumbnail" onclick="changeImage('main-image', 'image/image-principale_annexe2.png')">
+                        <img src="image/image-principale_annexe3.png" alt="Image 4" class="thumbnail" onclick="changeImage('main-image', 'image/image-principale_annexe3.png')">
+                    </div>
+                    <p>Projet 1 - Carte de restaurant</p>
+                </div>
+            </div>
+    
+            <!-- Portfolio Item 2 - Image secondaire -->
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img id="secondary-image" src="image/image-secondaire.png" alt="Image secondaire" class="image-main" onclick="toggleZoom('secondary-image')">
+                    <button class="zoom-button" id="zoom-toggle-secondary" onclick="toggleZoom('secondary-image')">Zoomer</button>
+                    <div class="thumbnail-container">
+                        <img src="image/image-secondaire.png" alt="Image 1" class="thumbnail" onclick="changeImage('secondary-image', 'image/image-secondaire.png')">
+                        <img src="image/image-secondaire_annexe1.png" alt="Image 2" class="thumbnail" onclick="changeImage('secondary-image', 'image/image-secondaire_annexe1.png')">
+                        <img src="image/image-secondaire_annexe2.png" alt="Image 3" class="thumbnail" onclick="changeImage('secondary-image', 'image/image-secondaire_annexe2.png')">
+                        <img src="image/image-secondaire_annexe3.png" alt="Image 4" class="thumbnail" onclick="changeImage('secondary-image', 'image/image-secondaire_annexe3.png')">
+                    </div>
+                    <p>Projet 2 - Site vitrine pour un bar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>Témoignages</h2>
+            <div class="testimonial-items">
+                <div class="testimonial-item">
+                    <h4>Client 1</h4>
+                    <p>"Le service a été impeccable et notre site a dépassé nos attentes."</p>
+                </div>
+                <div class="testimonial-item">
+                    <h4> Client 2</h4>
+                    <p>"Très satisfait du professionnalisme et de la réactivité de l'équipe."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-nous</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Votre nom" required>
+                <input type="email" placeholder="Votre email" required>
+                <textarea placeholder="Décrivez votre projet" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AvtWebServices. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="javaavt.js"> </script>
+
+    
+</body>
+</html>
