@@ -108,6 +108,32 @@ header nav ul li a {
     margin-bottom: 30px;
 }
 
+.animated-text {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; 
+    animation: float 5s ease-in-out 1 forwards;
+    position: relative;
+    color: #000000; 
+}
+
+@keyframes float {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0); 
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px); 
+    }
+}
+
 /* Section Services */
 .services {
     background-color: #f9f9f9; 
@@ -161,6 +187,15 @@ header nav ul li a {
     margin-bottom: 20px;
     color: #000000; 
 }
+
+.portfolio-item img {
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item img:hover {
+    transform: scale(1.1);  /* Zoom léger */
+}
+
 
 .image-main {
     width: 100%;        
